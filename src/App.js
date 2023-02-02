@@ -1,5 +1,6 @@
 import "./App.css";
 import A from "./a/a.js";
+import B from "./b/b";
 
 function App() {
   return (
@@ -10,8 +11,8 @@ function App() {
       </header>
       <main>
         <A />
-        {/* <B />
-        <C />
+        <B />
+        {/* <C />
         <D />
         <E /> */}
       </main>

@@ -1,0 +1,10 @@
+#b {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-area {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}

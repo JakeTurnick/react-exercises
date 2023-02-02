@@ -1,0 +1,10 @@
+.contact-name {
+    display: flex;
+}
+.contact-name > * {
+    margin: 0 3px;
+}
+
+.contact-card {
+    padding: 5px;
+}

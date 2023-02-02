@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { nanoid } from "nanoid";
+import "./blog-form.css";
 
 function BlogForm({ addBlog }) {
   const [title, setTitle] = useState("");
@@ -41,8 +42,9 @@ function BlogForm({ addBlog }) {
         value={body}
         onChange={handleBody}
       />
-      <h1>hey</h1>
-      <button type="submit">Submit blog</button>
+      <button disabled type="submit">
+        Submit blog
+      </button>
     </form>
   );
 }
