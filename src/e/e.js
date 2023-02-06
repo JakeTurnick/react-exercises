@@ -47,11 +47,12 @@ function E() {
     const deleteBlog = (choice) => {
         const newBlogs = blogs.filter(blog => blog.key !== choice.target.value)
         setBlogs(newBlogs)
+        setCurrBlog(null)
     }
 
     return (
         <section id="E" className="component">
-            <h1>E</h1>
+            <h1>E - CRUD Blogs</h1>
             <BlogForm addBlog={addBlog} />
             <div id="blog-select-view">
                 <BlogList blogs={blogs} selectBlog={selectBlog} deleteBlog={deleteBlog} />

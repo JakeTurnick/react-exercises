@@ -13,11 +13,11 @@ function App() {
         there will be buttons here
       </header>
       <main>
-        <h1>A - D hidden while working on E</h1>
-        {/* <A />
+        <h1>React Exercises</h1>
+        <A />
         <B />
         <C />
-        <D /> */}
+        <D />
         <E />
       </main>
       
