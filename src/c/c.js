@@ -27,18 +27,20 @@ function C() {
 	const [currBlog, setCurrBlog] = useState(blogs[0]);
 
 	const changeBlog = (newBlogKey) => {
-		const foundBlog = blogs.find((blog) => blog.key == newBlogKey.target.value);
+		const foundBlog = blogs.find(
+			(blog) => blog.key === newBlogKey.target.value
+		);
 		setCurrBlog(foundBlog);
 	};
 
 	return (
-		<div id="c" className="component">
+		<section id="C" className="component">
 			<h2>C - Blog Browser</h2>
 			<div id="blog-viewer">
 				<BlogNav blogs={blogs} changeBlog={changeBlog} />
 				<BlogReader blog={currBlog} />
 			</div>
-		</div>
+		</section>
 	);
 }
 
