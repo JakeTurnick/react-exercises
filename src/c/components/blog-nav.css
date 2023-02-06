@@ -1,0 +1,10 @@
+#blog-nav {
+    width: 30%;
+    padding: 1%;
+    display: inline-block;
+}
+
+#blog-nav > ul > * {
+    text-decoration: underline;
+    padding: 10px 0;
+}

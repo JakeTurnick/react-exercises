@@ -1,0 +1,12 @@
+.link {
+    text-decoration: none;
+}
+
+.link-tags {
+    padding: 0px;
+}
+
+.link-tags > * {
+    display: inline-block;
+    padding: 1%;
+}

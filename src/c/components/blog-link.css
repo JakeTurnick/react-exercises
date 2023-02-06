@@ -1,0 +1,12 @@
+.blog-link-btn {
+    color: blue;
+    background-color: hsla(240, 50%, 80%, 0);
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.blog-link-btn:hover {
+    background-color: hsla(40, 80%, 50%, .75);
+    border-radius: 5px;
+}

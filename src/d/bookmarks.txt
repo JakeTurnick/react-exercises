@@ -1,0 +1,6 @@
+bookmarksHTML = bookmarks
+    .filter(filter ? bookmarks.tag === filter : bookmarks)
+    //if filter exists -> only filtered items, else: all bookmarks
+    .map(bookmark => <Bookmark />)
+
+    multi-line .method()'s are OK

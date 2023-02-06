@@ -1,0 +1,13 @@
+#blog-reader {
+    display: inline-block;
+    max-width: 60%;
+}
+
+#blog-reader > h3 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+#blog-reader > p {
+    font-size: 1.25rem;
+}

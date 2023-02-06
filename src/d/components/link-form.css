@@ -1,0 +1,12 @@
+.link-form {
+    width: 100%;
+}
+
+.link-form > * {
+    width: 30%;
+}
+
+.link-form > button {
+    width: 30%;
+    padding: .5rem;
+}
