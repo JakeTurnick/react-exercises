@@ -3,6 +3,7 @@ import {nanoid} from "nanoid";
 import BlogList from "./components/blogList";
 import BlogForm from "./components/blogForm";
 import BlogReader from "./components/blogReader";
+import "./e.css"
 
 const INITIAL_BLOGS = [
     {
@@ -39,15 +40,23 @@ function E() {
         setBlogs([newBlog, ...blogs])
     }
     const selectBlog = (choice) => {
-        setCurrBlog(choice)
+        const blogChoice = blogs.find(blog => blog.key == choice.target.value);
+        setCurrBlog(blogChoice)
+    }
+    //editBlog
+    const deleteBlog = (choice) => {
+        const newBlogs = blogs.filter(blog => blog.key !== choice.target.value)
+        setBlogs(newBlogs)
     }
 
     return (
         <section id="E" className="component">
             <h1>E</h1>
             <BlogForm addBlog={addBlog} />
-            <BlogList blogs={blogs} selectBlog={selectBlog} />
-            <BlogReader blog={currBlog} />
+            <div id="blog-select-view">
+                <BlogList blogs={blogs} selectBlog={selectBlog} deleteBlog={deleteBlog} />
+                <BlogReader blog={currBlog} />
+            </div>
         </section>
         
     )

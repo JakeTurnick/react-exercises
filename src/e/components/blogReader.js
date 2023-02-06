@@ -1,10 +1,14 @@
 import Blog from "./blog";
+import "./blogReader.css"
 
 function BlogReader(props) {
-    console.log(props)
 
     return (
-        props.blog && <Blog blog={props.blog} />
+        <div id="blog-reader">
+            {!props.blog && <h3>Select a blog to view!</h3>}
+            {props.blog && <Blog blog={props.blog} body={props.blog.blogBody} />}
+        </div>
+        
     )
 }
 

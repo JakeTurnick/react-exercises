@@ -1,0 +1,10 @@
+#blog-select-view {
+    width: 100%;
+    display: flex;
+}
+
+#blog-select-view > * {
+    border: 2px solid black;
+    max-width: 50%;
+    margin: 5px;
+}

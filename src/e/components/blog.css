@@ -1,0 +1,34 @@
+
+.blog-actions > button {
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.sel-btn{
+    background-color: hsl(240, 80%, 50%);
+    color: white;
+}
+.sel-btn:hover {
+    background-color: hsl(240, 100%, 90%);
+    color: black;
+}
+.edit-btn {
+    background-color: hsl(120, 80%, 20%);
+    color: white;
+}
+.edit-btn:hover {
+    background-color: hsl(120, 50%, 80%);
+    color: black;
+}
+.del-btn {
+    background-color: hsl(0, 80%, 30%);
+    color: white;
+}
+.del-btn:hover {
+    background-color: hsl(0, 80%, 80%);
+    color: black;
+}
+
+#selected-blog {
+    padding: 1rem;
+}
